@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B6D67771CF23CC50045D667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC441091CEFCFBD008DF580 /* Main.storyboard */; };
 		3BC441061CEFCFBD008DF580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC441051CEFCFBD008DF580 /* AppDelegate.swift */; };
 		3BC441081CEFCFBD008DF580 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC441071CEFCFBD008DF580 /* ViewController.swift */; };
-		3BC4410B1CEFCFBD008DF580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC441091CEFCFBD008DF580 /* Main.storyboard */; };
 		3BC4410E1CEFCFBE008DF580 /* Camera_Colin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4410C1CEFCFBE008DF580 /* Camera_Colin.xcdatamodeld */; };
 		3BC441101CEFCFBE008DF580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC4410F1CEFCFBE008DF580 /* Assets.xcassets */; };
 		3BC441131CEFCFBE008DF580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC441111CEFCFBE008DF580 /* LaunchScreen.storyboard */; };
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B6D67761CF23B8B0045D667 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		3BC441021CEFCFBD008DF580 /* Camera Colin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Camera Colin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC441051CEFCFBD008DF580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BC441071CEFCFBD008DF580 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +139,7 @@
 				3BC440FE1CEFCFBD008DF580 /* Sources */,
 				3BC440FF1CEFCFBD008DF580 /* Frameworks */,
 				3BC441001CEFCFBD008DF580 /* Resources */,
+				SWIFCLEANCUSTOMRUNSCRIPT /* Swift-Clean Run Script */,
 			);
 			buildRules = (
 			);
@@ -235,9 +237,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B6D67771CF23CC50045D667 /* Main.storyboard in Resources */,
 				3BC441131CEFCFBE008DF580 /* LaunchScreen.storyboard in Resources */,
 				3BC441101CEFCFBE008DF580 /* Assets.xcassets in Resources */,
-				3BC4410B1CEFCFBD008DF580 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +258,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		SWIFCLEANCUSTOMRUNSCRIPT /* Swift-Clean Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift-Clean Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "if [[ -z ${SKIP_SWIFTCLEAN} || ${SKIP_SWIFTCLEAN} != 1 ]]; then\nif [[ -d \"${LOCAL_APPS_DIR}/Swiftly-Clean.app\" ]]; then \n\"${LOCAL_APPS_DIR}\"/Swiftly-Clean.app/Contents/Resources/SwiftClean.app/Contents/MacOS/SwiftClean \"${SRCROOT}\"?@autoFix \nelse\necho \"warning: You have to install and set up Swift-Clean to use its features!\" \nfi\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3BC440FE1CEFCFBD008DF580 /* Sources */ = {
@@ -304,6 +323,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3BC4410A1CEFCFBD008DF580 /* Base */,
+				3B6D67761CF23B8B0045D667 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -491,6 +511,7 @@
 				3BC4412F1CEFCFBE008DF580 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BC441301CEFCFBE008DF580 /* Build configuration list for PBXNativeTarget "Camera ColinTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +520,7 @@
 				3BC441321CEFCFBE008DF580 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BC441331CEFCFBE008DF580 /* Build configuration list for PBXNativeTarget "Camera ColinUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +529,7 @@
 				3BC441351CEFCFBE008DF580 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
